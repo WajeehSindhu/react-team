@@ -1,25 +1,32 @@
-import React from "react";
+import React,{useEffect} from 'react'
+import Banner from "../components/Banner"
 
 const Contact = () => {
+
+   useEffect (()=>{
+    document.title = "Home | Team Work"
+   },[]) 
+
   return (
-    <section className="bg-gray-900 text-white">
+    <>
+    <section className="bg-gray-900 text-white dark:bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Text Section */}
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight dark:text-black">
             Learn React with Modern UI
           </h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-300 dark:text-black">
             Build dynamic web apps using React and Tailwind CSS. Start your frontend journey today with this beginner-friendly course!
             Both Android and iOS allow you to display formatted text by annotating ranges of a string with specific formatting like bold or colored text (NSAttributedString on iOS, SpannableString on Android). In practice, this is very tedious. For React Native, we decided to use the web paradigm for this, where you can nest text to achieve the same effect.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+          <button className="bg-blue-600 dark:bg-black hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
             Get Started
           </button>
         </div>
 
         {/* Image Section */}
-        <div className="w-full">
+        <div className="w-full dark:bg-black ">
           <img
             src="./images/contactBanner.png"
             alt="React Banner"
@@ -28,6 +35,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    <Banner/>
+    </>
   );
 };
 
