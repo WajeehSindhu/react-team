@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const About = () => {
+   useEffect (()=>{
+    document.title = "About | Team Work"
+   },[]) 
   return (
     <div className='min-h-screen'>
       About

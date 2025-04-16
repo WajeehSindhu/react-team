@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 const ContactPage = () => {
+   useEffect (()=>{
+    document.title = "Contact | Team Work"
+   },[]) 
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4">
       <div className="max-w-6xl mx-auto bg-white p-8 rounded-2xl shadow-md">
