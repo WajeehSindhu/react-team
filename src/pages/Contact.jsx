@@ -9,9 +9,7 @@ const Contact = () => {
 
   return (
     <>
-    <section className="h-[500px] flex flex-col justify-center items-center bg-gradient-to-br from-blue-300 via-blue-100 to-white dark:from-gray-900 dark:to-gray-800 dark:bg-gray-900"
-    // //"bg-gray-900 text-white dark:bg-white"
-    >
+    <section className="h-[500px] flex flex-col justify-center items-center bg-gradient-to-br from-blue-300 via-blue-100 to-white dark:from-gray-900 dark:to-gray-800 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Text Section */}
         <div className="space-y-6">
