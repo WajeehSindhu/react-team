@@ -1,10 +1,11 @@
 import React,{useEffect} from 'react'
-
+import Slider from "../components/Slider"
 const Blog = () => {
    useEffect (()=>{
     document.title = "Blog | Team Work"
    },[]) 
   return (
+    <>
     <section class="text-gray-600 body-font overflow-hidden">
     <div class="container px-5 py-24 mx-auto">
       <div class="-my-8 divide-y-2 divide-gray-100">
@@ -59,7 +60,8 @@ const Blog = () => {
       </div>
     </div>
   </section>
-  
+ <Slider/>
+  </>
   )
 }
 
