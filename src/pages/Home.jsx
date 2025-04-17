@@ -1,5 +1,8 @@
 import React,{useEffect} from 'react'
 import Cards from '../components/Cards'
+import Services from '../components/Services'
+import TechStack from '../components/TechStack'
+import Portfolio from '../components/Portfolio'
 
 const Home = () => { 
  useEffect (()=>{
@@ -23,6 +26,9 @@ const Home = () => {
     </a>
   </section> 
   <Cards/>
+  <Services/>
+  <TechStack/>
+  <Portfolio/>
    </>
   )
 }

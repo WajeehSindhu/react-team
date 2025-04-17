@@ -1,6 +1,6 @@
 import React from "react";
 
-const BusinessBanner = () => {
+const Banner = () => {
   const cardsContent = [
     {
       img: '/Team/Sajjad-ahmad.webp',
@@ -59,4 +59,4 @@ const BusinessBanner = () => {
   );
 };
 
-export default BusinessBanner;
+export default Banner;
