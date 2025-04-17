@@ -1,16 +1,17 @@
 import React,{useEffect} from 'react'
-import Banner from '../components/Banner';
+import Banner from "../components/Banner"
 
 const Contact = () => {
 
-   useEffect (()=>{
+  useEffect(() => {
     document.title = "Home | Team Work"
-   },[]) 
+  }, [])
 
   return (
     <>
     <section className="bg-gray-900 text-white dark:bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+        {/* Text Section */}
         <div className="space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight dark:text-black">
             Learn React with Modern UI
@@ -23,6 +24,8 @@ const Contact = () => {
             Get Started
           </button>
         </div>
+
+        {/* Image Section */}
         <div className="w-full dark:bg-black ">
           <img
             src="./images/contactBanner.png"

@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import Cards from '../components/Cards'
 import Services from '../components/Services'
 import TechStack from '../components/TechStack'
@@ -8,21 +8,21 @@ import CallToAction from '../components/CallToAction'
 import Contact from '../components/Contact'
 import Testimonials from '../components/Testimonials'
 
-const Home = () => { 
- useEffect (()=>{
-  document.title = "Home | Team Work"
- },[]) 
+const Home = () => {
+  useEffect(() => {
+    document.title = "Home | Team Work"
+  }, [])
 
   return (
    <>
  <HomeBanner />
   <Cards/>
-  <Services/>
-  <TechStack/>
-  <Portfolio/>
-  <Testimonials/>
-  <CallToAction/>
-  <Contact/>
+  <Services />
+  <TechStack />
+  <Portfolio />
+  <CallToAction />
+  <Testimonials />
+  <Contact />
    </>
   )
 }
