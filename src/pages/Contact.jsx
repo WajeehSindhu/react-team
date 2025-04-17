@@ -13,6 +13,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         {/* Text Section */}
         <div className="space-y-6">
+          <h1>mm</h1>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight dark:text-white text-gray-900">
             Learn React with Modern UI
           </h1>
