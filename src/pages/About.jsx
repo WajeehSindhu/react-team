@@ -1,10 +1,12 @@
-import React,{useEffect} from 'react'
+import React ,{useEffect} from 'react'
+import Slider from "../components/Slider"
 
 const About = () => {
    useEffect (()=>{
     document.title = "About | Team Work"
    },[]) 
   return (
+    <>
     <section className="text-gray-600 body-font overflow-hidden">
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-col text-center w-full mb-20">
@@ -411,7 +413,8 @@ const About = () => {
       </div>
     </div>
   </section>
-  
+  <Slider/>
+  </>
   )
 }
 
