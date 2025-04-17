@@ -5,9 +5,8 @@ const Blog = () => {
     document.title = "Blog | Team Work"
    },[]) 
   return (
-    <div className='min-h-screen'>
-      Blog
-    </div>
+ <h1>Blog</h1>
+  
   )
 }
 
