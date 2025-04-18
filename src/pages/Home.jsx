@@ -5,7 +5,7 @@ import TechStack from '../components/TechStack'
 import Portfolio from '../components/Portfolio'
 import HomeBanner from '../components/HomeBanner'
 import CallToAction from '../components/CallToAction'
-import Contact from '../components/Contact'
+import Contact from "../components/Contact";
 import Testimonials from '../components/Testimonials'
 
 const Home = () => {
@@ -14,16 +14,16 @@ const Home = () => {
   }, [])
 
   return (
-   <>
- <HomeBanner />
-  <Cards/>
-  <Services />
-  <TechStack />
-  <Portfolio />
-  <CallToAction />
-  <Testimonials />
-  <Contact />
-   </>
+    <>
+      <HomeBanner />
+      <Cards />
+      <Services />
+      <TechStack />
+      <Portfolio />
+      <CallToAction />
+      <Testimonials />
+      <Contact />
+    </>
   )
 }
 

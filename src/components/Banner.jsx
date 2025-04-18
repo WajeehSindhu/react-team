@@ -19,8 +19,8 @@ const Banner = () => {
         
         {/* Left side (White Background) */}
         <div className="bg-white py-12 px-6 md:px-16 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-900 leading-tight">
-            BUSINESS BANNER <br /> <span className="text-gray-800">DESIGN</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-800 leading-tight">
+            BUSINESS BANNER <br /> <span className="text-gray-500">DESIGN</span>
           </h1>
           <p className="text-gray-600 mt-4 text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -28,7 +28,7 @@ const Banner = () => {
           </p>
           <a
             href="#"
-            className="inline-block mt-6 bg-green-700 text-white px-6 py-3 rounded-md text-lg hover:bg-green-800 transition"
+            className="inline-block mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg transition dark:bg-gray-900"
           >
             Learn More
           </a>
@@ -54,7 +54,7 @@ const Banner = () => {
       </div>
 
       {/* Rotated green background shape */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-green-700 transform skew-x-[-60deg] origin-left z-0" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600 transform skew-x-[-60deg] origin-left z-0  dark:bg-gray-900" />
     </section>
   );
 };
