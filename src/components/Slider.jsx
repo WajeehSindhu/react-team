@@ -24,7 +24,7 @@ export default function SliderSection() {
     };
 
     return (
-        <section className="text-gray-600 body-font">
+        <section className="bg-gray-300">
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-10">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
@@ -39,13 +39,13 @@ export default function SliderSection() {
                     {/* Slide Buttons */}
                     <button
                         onClick={slideLeft}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500"
                     >
                         ‹
                     </button>
                     <button
                         onClick={slideRight}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500"
                         disabled={currentIndex >= maxIndex}
                     >
                         ›
@@ -65,12 +65,12 @@ export default function SliderSection() {
                                             className="absolute inset-0 w-full h-full object-cover object-center"
                                             src={card.img}
                                         />
-                                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 group-hover:opacity-100">
-                                            <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
+                                        <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 group-hover:opacity-100 dark:bg-black">
+                                            <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 dark:text-white">
                                                 THE SUBTITLE
                                             </h2>
-                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{card.title}</h1>
-                                            <p className="leading-relaxed">
+                                            <h1 className="title-font text-lg font-medium text-gray-900 mb-3 dark:text-blue-500">{card.title}</h1>
+                                            <p className="leading-relaxed dark:text-gray-500">
                                                 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.
                                             </p>
                                         </div>
