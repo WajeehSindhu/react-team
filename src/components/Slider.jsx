@@ -39,16 +39,16 @@ export default function SliderSection() {
                 <div className="relative">
                     <button
                         onClick={slideLeft}
-                        className="absolute sm:left-[-30px] top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500 dark:hover:bg-white"
+                        className="absolute sm:left-[-22px] top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500 dark:hover:bg-white"
                     >
-                        <FaChevronLeft size={23}/>
+                        <FaChevronLeft size={20}/>
                     </button>
                     <button
                         onClick={slideRight}
-                        className="absolute right-0 sm:right-[-30px] top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2  rounded-full hover:bg-gray-100 dark:bg-gray-500 dark:hover:bg-white"
+                        className="absolute right-0 sm:right-[-22px] top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2  rounded-full hover:bg-gray-100 dark:bg-gray-500 dark:hover:bg-white"
                         disabled={currentIndex >= maxIndex}
                     >
-                       <FaChevronRight size={23}/>
+                       <FaChevronRight size={20}/>
                     </button>
 
                     {/* Sliding Container */}
