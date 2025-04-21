@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Slider from "../components/Slider"
+
 const Blog = () => {
   useEffect(() => {
     document.title = "Blog | Team Work"
