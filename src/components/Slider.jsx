@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaChevronLeft,FaChevronRight } from "react-icons/fa";
 
 const cardData = [
     { img: '/Images/SliderImageone.jpeg', title: 'Shooting Stars' },
@@ -36,19 +37,18 @@ export default function SliderSection() {
                 </div>
 
                 <div className="relative">
-                    {/* Slide Buttons */}
                     <button
                         onClick={slideLeft}
-                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500"
+                        className="absolute sm:left-[-30px] top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500 dark:hover:bg-white"
                     >
-                        ‹
+                        <FaChevronLeft size={23}/>
                     </button>
                     <button
                         onClick={slideRight}
-                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 dark:bg-gray-500"
+                        className="absolute right-0 sm:right-[-30px] top-1/2 -translate-y-1/2 z-10 bg-white shadow p-2  rounded-full hover:bg-gray-100 dark:bg-gray-500 dark:hover:bg-white"
                         disabled={currentIndex >= maxIndex}
                     >
-                        ›
+                       <FaChevronRight size={23}/>
                     </button>
 
                     {/* Sliding Container */}
