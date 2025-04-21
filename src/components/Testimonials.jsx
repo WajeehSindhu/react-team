@@ -61,9 +61,9 @@ const Testimonials = () => {
                   src={testimonial.image}
                   alt={testimonial.name}
                    loading="lazy"
-                  className="w-16 h-16 rounded-full mx-auto mb-1 object-cover"
+                  className="w-16 h-16 rounded-full mx-auto mb-1 object-cover zoom-target"
                 />
-                <h3 className="font-semibold text-lg text-blue-700">{testimonial.name}</h3>
+                <h3 className="font-semibold text-lg text-blue-700 zoom-target">{testimonial.name}</h3>
                 <span className="text-base text-gray-500 italic">{testimonial.role}</span>
                 <p className="text-gray-700  text-base mt-3">"{testimonial.comment}"</p>
               </div>

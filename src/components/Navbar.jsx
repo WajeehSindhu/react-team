@@ -65,7 +65,7 @@ const Navbar = () => {
                                 to={to}
                                 className={({ isActive }) =>
                                     `${isActive ? "text-red-400 underline underline-offset-[10px]" : ""
-                                    } px-2 text-lg hover:text-red-400 hover:underline hover:underline-offset-[10px] transition-all duration-300 ease-in-out`
+                                    } px-2 text-lg hover:text-red-400 hover:underline hover:underline-offset-[10px] transition-all duration-300 ease-in-out zoom-target`
                                 }
                             >
                                 {label}

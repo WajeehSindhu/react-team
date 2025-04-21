@@ -64,17 +64,17 @@ const Portfolio = () => {
             <img
               src={project.img}
               alt={project.title}
-              className="w-full h-60 object-cover rounded-t-md"
+              className="w-full h-60 object-cover rounded-t-md zoom-target"
               loading="lazy"
             />
             <div className="flex flex-col justify-between items-center space-y-2 p-2">
-              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-500 mb-2">{project.title}</h3>
+              <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-500 mb-2 zoom-target">{project.title}</h3>
               <p className="text-gray-700 text-sm dark:text-gray-300 dark:italic mb-4">{project.desc}</p>
               <div className="flex flex-wrap gap-2 justify-center text-sm text-blue-600 font-semibold">
                 {project.tech.map((t, i) => (
-                  <span key={i} className="bg-white dark:bg-blue-400 dark:text-black dark:border-1 dark:border-white px-2 py-1 rounded border border-blue-300">
+                  <button key={i} className="bg-white hover:bg-blue-200 dark:bg-blue-400 dark:hover:bg-blue-100 dark:text-black dark:border-1 dark:border-white px-2 py-1 rounded border border-blue-300 zoom-target transition-all duration-300 ease-in-out">
                     {t}
-                  </span>
+                  </button>
                 ))}
               </div>
               <a

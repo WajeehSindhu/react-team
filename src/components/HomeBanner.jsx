@@ -11,7 +11,7 @@ const HomeBanner = () => {
     </p>
     <a
       href="/contact"
-      className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-medium shadow-lg transition duration-300 ease-in-out"
+      className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-xl text-lg font-medium shadow-lg transition duration-300 ease-in-out zoom-target"
     >
       Get Started
     </a>

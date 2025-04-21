@@ -4,32 +4,32 @@ import { FaCode, FaPaintBrush, FaWordpress, FaRocket,FaSearch,FaMobileAlt } from
 const Services = () => {
   const services = [
     {
-      icon: <FaCode className="text-4xl text-blue-600" />,
+      icon: <FaCode className="text-4xl text-blue-600 zoom-target" />,
       title: 'Web Development',
       desc: 'Custom-built websites using modern technologies like React and Next.js.',
     },
     {
-      icon: <FaPaintBrush className="text-4xl text-blue-600" />,
+      icon: <FaPaintBrush className="text-4xl text-blue-600 zoom-target" />,
       title: 'UI/UX Design',
       desc: 'Creating intuitive, user-friendly interfaces for the best user experience.',
     },
     {
-      icon: <FaWordpress className="text-4xl text-blue-600" />,
+      icon: <FaWordpress className="text-4xl text-blue-600 zoom-target" />,
       title: 'WordPress Development',
       desc: 'Building dynamic, SEO-optimized WordPress themes and plugins.',
     },
     {
-      icon: <FaRocket className="text-4xl text-blue-600" />,
+      icon: <FaRocket className="text-4xl text-blue-600 zoom-target" />,
       title: 'Performance Optimization',
       desc: 'Improving site speed, SEO, and responsiveness for better performance.',
     },
     {
-        icon: <FaSearch className="text-4xl text-blue-600" />,
+        icon: <FaSearch className="text-4xl text-blue-600 zoom-target" />,
         title: 'SEO Optimization',
         desc: "Boost your website’s visibility with SEO strategies tailored to your audience.",
       },
       {
-        icon: <FaMobileAlt className="text-4xl text-blue-600" />,
+        icon: <FaMobileAlt className="text-4xl text-blue-600 zoom-target" />,
         title: 'Mobile App Development',
         desc: 'Create mobile apps that deliver fast, responsive, and immersive user experiences.',
       },

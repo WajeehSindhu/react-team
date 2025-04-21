@@ -13,7 +13,7 @@ const Footer = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500`
+                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500 zoom-target`
                 }
               >
                 Home
@@ -23,7 +23,7 @@ const Footer = () => {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500`
+                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500 zoom-target`
                 }
               >
                 About
@@ -33,7 +33,7 @@ const Footer = () => {
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500`
+                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500 zoom-target`
                 }
               >
                 Contact
@@ -43,7 +43,7 @@ const Footer = () => {
               <NavLink
                 to="/blog"
                 className={({ isActive }) =>
-                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500`
+                  `no-underline transition-all duration-300 text-gray-400 dark:text-gray-700 ${isActive ? "text-red-400 dark:text-red-500" : ""} hover:text-red-400 dark:hover:text-red-500 zoom-target`
                 }
               >
                 Blog
@@ -52,20 +52,20 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Social Links */}
+        
         <div className='flex flex-col justify-start items-start space-y-4 pb-6'>
           <h4 className='text-lg font-bold uppercase'>Connect with us</h4>
           <div className='flex gap-6'>
-            <a href="https://www.facebook.com/barontechh" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out'>
+            <a href="https://www.facebook.com/barontechh" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out zoom-target'>
               <FaFacebook size={22} />
             </a>
-            <a href="https://www.linkedin.com/company/barontech-pvt-limited/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out'>
+            <a href="https://www.linkedin.com/company/barontech-pvt-limited/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out zoom-target'>
               <FaLinkedinIn size={22} />
             </a>
-            <a href="https://www.instagram.com/barontech.co/" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out'>
+            <a href="https://www.instagram.com/barontech.co/" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out zoom-target'>
               <FaInstagram size={22} />
             </a>
-            <a href="https://twitter.com/barontech_co" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out'>
+            <a href="https://twitter.com/barontech_co" target="_blank" rel="noopener noreferrer" className='text-blue-400 hover:text-red-400 dark:hover:text-red-600 transition-colors duration-300 ease-in-out zoom-target'>
               <FaTwitter size={22} />
             </a>
           </div>
@@ -74,15 +74,15 @@ const Footer = () => {
 
       <div className='bg-blue-500 dark:bg-black w-full flex flex-col sm:flex-row justify-evenly items-center pt-5 pb-5 px-2 text-center border-t border-white/30 dark:border-black/30'>
         <div>
-          <a href="https://barontech.co/" target='_blank' rel="noopener noreferrer" className="text-white hover:text-red-600 transition-all duration-300 ease">
+          <a href="https://barontech.co/" target='_blank' rel="noopener noreferrer" className="text-white hover:text-red-600 transition-all duration-300 ease zoom-target">
             &copy; {new Date().getFullYear()} Baron Tech Pvt Ltd. All Rights Reserved.
           </a>
         </div>
         <div className='flex gap-4 mt-2 sm:mt-0'>
-          <a href="/" className="text-lg text-black dark:text-red-400 hover:underline hover:text-white dark:hover:text-white transition-all duration-300">
+          <a href="/" className="text-lg text-black dark:text-red-400 hover:underline hover:text-white dark:hover:text-white transition-all duration-300 zoom-target">
             Privacy Policy
           </a>
-          <a href="/" className="text-lg text-black dark:text-red-400 hover:underline dark:hover:text-white transition-all duration-300">
+          <a href="/" className="text-lg text-black dark:text-red-400 hover:underline dark:hover:text-white transition-all duration-300 zoom-target">
             Terms of Use
           </a>
         </div>

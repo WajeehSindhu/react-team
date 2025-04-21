@@ -8,20 +8,20 @@ import { SiNextdotjs, SiTailwindcss, SiMongodb, SiBootstrap, SiOpenai } from 're
 
 
 const techIconsUp = [
-    { icon: <FaHtml5 className="text-orange-500 text-5xl" />, name: 'HTML5' },
-    { icon: <FaCss3Alt className="text-blue-600 text-5xl" />, name: 'CSS3' },
-    { icon: <FaJs className="text-yellow-500 text-5xl" />, name: 'JavaScript' },
-    { icon: <FaReact className="text-cyan-400 text-5xl" />, name: 'React' },
-    { icon: <SiNextdotjs className="text-black text-5xl" />, name: 'Next.js' },
-    { icon: <SiTailwindcss className="text-sky-400 text-5xl" />, name: 'Tailwind CSS' },
+    { icon: <FaHtml5 className="text-orange-500 text-5xl zoom-target" />, name: 'HTML5' },
+    { icon: <FaCss3Alt className="text-blue-600 text-5xl zoom-target" />, name: 'CSS3' },
+    { icon: <FaJs className="text-yellow-500 text-5xl zoom-target" />, name: 'JavaScript' },
+    { icon: <FaReact className="text-cyan-400 text-5xl zoom-target" />, name: 'React' },
+    { icon: <SiNextdotjs className="text-black text-5xl zoom-target" />, name: 'Next.js' },
+    { icon: <SiTailwindcss className="text-sky-400 text-5xl zoom-target" />, name: 'Tailwind CSS' },
 ]
 const techIconsDown = [
-    { icon: <SiBootstrap className="text-purple-600 text-5xl" />, name: 'Bootstrap' },
-    { icon: <FaNodeJs className="text-green-600 text-5xl" />, name: 'Node.js' },
-    { icon: <SiMongodb className="text-green-500 text-5xl" />, name: 'MongoDB' },
-    { icon: <FaWordpress className="text-blue-800 text-5xl" />, name: 'WordPress' },
-    { icon: <FaGithub className="text-gray-800 text-5xl" />, name: 'GitHub' },
-    { icon: <SiOpenai className="text-[#412991] text-5xl" />, name: 'OpenAI' },
+    { icon: <SiBootstrap className="text-purple-600 text-5xl zoom-target" />, name: 'Bootstrap' },
+    { icon: <FaNodeJs className="text-green-600 text-5xl zoom-target" />, name: 'Node.js' },
+    { icon: <SiMongodb className="text-green-500 text-5xl zoom-target" />, name: 'MongoDB' },
+    { icon: <FaWordpress className="text-blue-800 text-5xl zoom-target" />, name: 'WordPress' },
+    { icon: <FaGithub className="text-gray-800 text-5xl zoom-target" />, name: 'GitHub' },
+    { icon: <SiOpenai className="text-[#412991] text-5xl zoom-target" />, name: 'OpenAI' },
 
 ]
 
@@ -29,12 +29,12 @@ const settings = {
     infinite: true,
     speed: 5000,
     autoplay: true,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1,
     cssEase: "linear",
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
-    pauseOnHover: true, 
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,
