@@ -47,7 +47,7 @@ const Navbar = () => {
                 >
                     {menuOpen && (
                         <div
-                            className="md:hidden  hover:text-red-400 transition duration-500 ease-in-out flex justify-end items-center mr-2 pb-2"
+                            className="md:hidden  hover:text-red-400 transition duration-500 ease-in-out flex justify-end items-center mr-2 pb-2 zoom-target"
                             onClick={toggleMenu}
                         >
                             <FaTimes size={20} className="zoom-target" />

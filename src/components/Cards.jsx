@@ -47,8 +47,12 @@ const Cards = () => {
   ]
 
   return (
-    <section className='w-full flex flex-col justify-center items-center space-y-6 h-auto bg-blue-100 p-6'>
-      <h1 className='text-2xl font-bold text-blue-900'>Our Team</h1>
+    <section className='w-full flex flex-col justify-center items-center space-y-6 h-auto bg-blue-100 dark:bg-black p-6'>
+      <h1 className='text-2xl font-bold text-blue-900 dark:text-blue-600'>Our Team</h1>
+      <p className='text-blue-800 max-w-xl text-sm sm:text-base px-2 dark:text-gray-300 text-center mb-4'>
+        Meet the passionate minds behind our work — a dedicated team of developers, designers, and creators driven to deliver impactful digital experiences.
+      </p>
+
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-x-4 gap-y-6 max-w-5xl '>
         {cardsContent.map((card, index) => {
           return (
