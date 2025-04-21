@@ -48,22 +48,28 @@ const Cards = () => {
 
   return (
     <section className='w-full flex flex-col justify-center items-center space-y-6 h-auto bg-blue-100 p-6'>
-    <h1 className='text-2xl font-bold text-blue-900'>Our Team </h1>
-    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl'>
-    {cardsContent.map((card,index)=>{
-        return(
-            <div key={index} className='flex flex-col justify-center items-center gap-0 bg-blue-300 rounded-md shadow-md shadow-blue-500'>
-              <div className='w-full h-auto'>
-                <img src={card.img} alt={card.title} className='w-full h-full object-cover blur-[1px] hover:blur-[0px]  transition-all duration-300 ease'/>
+      <h1 className='text-2xl font-bold text-blue-900'>Our Team</h1>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-x-4 gap-y-6 max-w-5xl '>
+        {cardsContent.map((card, index) => {
+          return (
+            <div key={index} className='flex flex-col justify-start items-center bg-blue-300 rounded-md shadow-md shadow-blue-500 overflow-hidden group hover:translate-y-[-10px] hover:shadow-lg hover:shadow-blue-950 transition-all duration-300 ease-in-out'>
+              <div className='w-full h-full'>
+                <img
+                  src={card.img}
+                  alt={card.title}
+                  className='w-full h-full object-cover transition-all duration-300 ease group-hover:blur-0 blur-[1px] group-hover:brightness-110 rounded-t-md'
+                />
               </div>
-              <h3 className='text-lg font-semibold tracking-wide text-blue-700'>{card.name}</h3>      
-              <h4 className='text-base text-blue-600'>{card.title}</h4>
-              <p className='text-center'>{card.desc}</p>      
-            </div>
 
-        )
-    })}
-    </div>
+              <div className='p-4 text-center'>
+                <h3 className='text-lg font-semibold tracking-wide text-blue-700'>{card.name}</h3>
+                <h4 className='text-base text-blue-600'>{card.title}</h4>
+                <p className='text-base text-blue-800 mt-2'>{card.desc}</p>
+              </div>
+            </div>
+          )
+        })}
+      </div>
     </section>
   )
 }
