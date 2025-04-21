@@ -51,7 +51,7 @@ const Testimonials = () => {
     <section className="bg-blue-50 dark:bg-black/80 pt-10 pb-20 p-4">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-2 uppercase tracking-wide">Testimonials </h2>
-        <p className="text-blue-800 text-sm sm:text-base px-2 dark:text-gray-300 text-center mb-4 text-center">Hear what our clients and partners say about us.</p>
+        <p className="text-blue-800 text-sm sm:text-base px-2 dark:text-gray-300 mb-4 text-center">Hear what our clients and partners say about us.</p>
 
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
