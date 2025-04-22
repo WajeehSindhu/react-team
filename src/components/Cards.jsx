@@ -61,6 +61,7 @@ const Cards = () => {
                 <img
                   src={card.img}
                   alt={card.title}
+                  loading="lazy"
                   className='w-full h-full object-cover transition-all duration-300 ease group-hover:blur-0 blur-[1px] group-hover:brightness-110 rounded-t-md zoom-target'
                 />
               </div>

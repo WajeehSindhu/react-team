@@ -37,6 +37,7 @@ const Navbar = () => {
                     <img
                         src="/images/Team logo.png"
                         alt="Logo"
+                        loading="lazy"
                         className="w-full max-w-full object-cover hover:opacity-60 zoom-target transition-all duration-300 ease-in-out"
                     />
                 </NavLink>

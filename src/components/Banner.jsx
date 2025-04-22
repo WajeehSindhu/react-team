@@ -16,8 +16,6 @@ const Banner = () => {
   return (
     <section className="relative w-full h-auto overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 relative z-10">
-        
-        {/* Left side (White Background) */}
         <div className="bg-white py-12 px-6 md:px-16 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-800 leading-tight">
             BUSINESS BANNER <br /> <span className="text-gray-500">DESIGN</span>
@@ -33,8 +31,6 @@ const Banner = () => {
             Learn More
           </a>
         </div>
-
-        {/* Right side content (image grid on rotated bg) */}
         <div className="py-12 px-6 flex justify-center items-center relative z-10">
           <div className="grid grid-cols-3 gap-3">
             {cardsContent.map((item, i) => (
@@ -46,14 +42,13 @@ const Banner = () => {
                   src={item.img}
                   alt={`Team member ${i + 1}`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             ))}
           </div>
         </div>
       </div>
-
-      {/* Rotated green background shape */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-600 transform skew-x-[-60deg] origin-left z-0  dark:bg-gray-900" />
     </section>
   );

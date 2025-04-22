@@ -23,7 +23,7 @@ const Home = () => {
     property="og:description" 
     content="A collaborative React-based project where we build amazing things together. Let's get started!" 
   />
-  <meta property="og:image" content="/Images/Home-Page.png" />
+  <meta property="og:image" content="/Images/Home-Page.png" loading="lazy"/>
   <meta property="og:url" content="http://localhost:5173/" />
   <meta property="og:type" content="website" />
   
@@ -33,7 +33,7 @@ const Home = () => {
     name="twitter:description" 
     content="A collaborative React-based project where we build amazing things together. Let's get started!" 
   />
-  <meta name="twitter:image" content="/Images/preview.jpg" />
+  <meta name="twitter:image" content="/Images/Home-Page.png" loading="lazy"/>
   <link rel="canonical" href="http://localhost:5173/" />
 </Helmet>
       <HomeBanner />

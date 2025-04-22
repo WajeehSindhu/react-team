@@ -14,14 +14,14 @@ const Contact = () => {
   />
   <meta property="og:title" content="Contact | Team Work Collaboration" />
   <meta property="og:description" content="Reach out to the Team Work developers for collaborations, feedback, or questions." />
-  <meta property="og:image" content="/Images/contact-preview.jpg" />
+  <meta property="og:image" content="/Images/Contact-Page.png"  loading="lazy"/>
   <meta property="og:url" content="http://localhost:5173/contact" />
   <meta property="og:type" content="website" />
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact | Team Work Collaboration" />
   <meta name="twitter:description" content="Reach out to the Team Work developers for collaborations, feedback, or questions." />
-  <meta name="twitter:image" content="/Images/Contact-Page.png" />
+  <meta name="twitter:image" content="/Images/Contact-Page.png" loading="lazy"/>
 
   <link rel="canonical" href="http://localhost:5173/contact" />
 </Helmet>

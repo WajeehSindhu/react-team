@@ -15,14 +15,14 @@ const Blog = () => {
   />
   <meta property="og:title" content="Team Work Blog | React Tips & Updates" />
   <meta property="og:description" content="Stay updated with blog posts, tutorials, and insights from the Team Work React project." />
-  <meta property="og:image" content="/Images/Blog-Page.png" />
+  <meta property="og:image" content="/Images/Blog-Page.png" loading="lazy"/>
   <meta property="og:url" content="http://localhost:5173/blog" />
   <meta property="og:type" content="article" />
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Team Work Blog | React Tips & Updates" />
   <meta name="twitter:description" content="Stay updated with blog posts, tutorials, and insights from the Team Work React project." />
-  <meta name="twitter:image" content="/Images/blog-preview.jpg" />
+  <meta name="twitter:image" content="/Images/Blog-Page.png" loading="lazy"/>
 
   <link rel="canonical" href="http://localhost:5173/blog" />
 </Helmet>

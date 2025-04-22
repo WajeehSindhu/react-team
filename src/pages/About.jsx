@@ -15,14 +15,14 @@ const About = () => {
   />
   <meta property="og:title" content="About Us | Team Work Developers" />
   <meta property="og:description" content="Meet the team behind Team Work – a collaborative React project built with passion." />
-  <meta property="og:image" content="/Images/About-Page.png" />
+  <meta property="og:image" content="/Images/About-Page.png" loading="lazy"/>
   <meta property="og:url" content="http://localhost:5173/about" />
   <meta property="og:type" content="website" />
   
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Us | Team Work Developers" />
   <meta name="twitter:description" content="Meet the team behind Team Work – a collaborative React project built with passion." />
-  <meta name="twitter:image" content="/Images/about-preview.jpg" />
+  <meta name="twitter:image" content="/Images/About-Page.png" loading="lazy"/>
 
   <link rel="canonical" href="http://localhost:5173/about" />
 </Helmet>

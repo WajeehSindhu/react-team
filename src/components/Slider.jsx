@@ -62,6 +62,7 @@ export default function SliderSection() {
                                             alt="gallery"
                                             className="absolute inset-0 w-full h-full object-cover object-center"
                                             src={card.img}
+                                            loading="lazy"
                                         />
                                         <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 group-hover:opacity-100 dark:bg-black">
                                             <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1 dark:text-white">
