@@ -1,12 +1,31 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 import Slider from "../components/Slider"
+import Services from '../components/Services'
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = "Blog | Team Work"
-  }, [])
+
   return (
     <>
+    <Helmet>
+  <title>Blog | Team Work - Articles & Insights</title>
+  <meta 
+    name="description" 
+    content="Explore blog posts, tips, and development insights from the Team Work project. Stay updated with our journey!" 
+  />
+  <meta property="og:title" content="Team Work Blog | React Tips & Updates" />
+  <meta property="og:description" content="Stay updated with blog posts, tutorials, and insights from the Team Work React project." />
+  <meta property="og:image" content="/Images/Blog-Page.png" />
+  <meta property="og:url" content="http://localhost:5173/blog" />
+  <meta property="og:type" content="article" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Team Work Blog | React Tips & Updates" />
+  <meta name="twitter:description" content="Stay updated with blog posts, tutorials, and insights from the Team Work React project." />
+  <meta name="twitter:image" content="/Images/blog-preview.jpg" />
+
+  <link rel="canonical" href="http://localhost:5173/blog" />
+</Helmet>
       <section className="bg-gradient-to-br from-blue-300 via-blue-100 to-white dark:from-gray-900 dark:to-gray-800">
         <div className="container px-5 py-24 mx-auto">
           <div className="-my-8 divide-y-2 divide-gray-100">
@@ -62,6 +81,7 @@ const Blog = () => {
         </div>
       </section>
       <Slider />
+      <Services/>
     </>
   )
 }
