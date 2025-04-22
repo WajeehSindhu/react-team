@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
-import { auth, googleProvider } from '../firebase'; // Import Google provider from firebase
+import { auth, googleProvider } from '../firebase'; 
 import { signInWithPopup } from 'firebase/auth';
 
 const Login = () => {
@@ -39,8 +39,8 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-300 dark:bg-white flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg shadow-blue-200 dark:shadow-red-400">
+    <div className="min-h-screen bg-white dark:bg-blue-300 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8 bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg shadow-blue-500 hover:shadow-blue-700  dark:shadow-red-400 dark:hover:shadow-red-600 transition-all duration-300 ease-in-out">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
             Sign in to your account
@@ -83,15 +83,15 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="text-lg p-2 rounded-lg bg-blue-400 text-white hover:bg-blue-500 w-full transition-all duration-300 ease-in-out"
+              className="text-lg p-2 rounded-lg bg-blue-400 text-white hover:bg-blue-500 w-full transition-all duration-300 ease-in-out zoom-target"
             >
               {loading ? 'Logging in...' : 'Log In'}
             </button>
             <button
               onClick={handleGoogleLogin}
-              className="flex justify-center items-center gap-x-4 text-lg p-2 bg-blue-400 hover:bg-blue-500 rounded-lg  w-full transition-all duration-300 ease-in-out"
+              className="flex justify-center items-center gap-x-4 group text-lg p-2 bg-blue-400 hover:bg-blue-500 rounded-lg  w-full transition-all duration-300 ease-in-out zoom-target"
             >
-              <span className='text-xl text-gradient-to-r from-blue-500 via-red-500 to-yellow-400'>
+              <span className="text-2xl text-red-500 group:hover:text-red-300">
                 <FaGoogle />
               </span>
               <span className='text-white'>Log in with Google</span>
